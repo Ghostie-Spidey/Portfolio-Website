@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythic Creations - About</title>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        /* === CSS Reset === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'MedievalSharp', cursive;
+        }
+        
+        /* === Background === */
+        body {
+            background: url('Images/hi.png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            color: white;
+        }
+        
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        
+        /* === Navigation (Top Left) === */
+        .nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        .nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        /* === Centered Content === */
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-title {
+            font-size: 3.5rem;
+            color: #DAA520;
+            text-shadow: 3px 3px 6px #000;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        
+        .about-text {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px #000;
+        }
+        
+        .signature {
+            font-family: 'Aguafina Script', cursive;
+            font-size: 2rem;
+            color: #DAA520;
+            margin-top: 40px;
+            text-shadow: 2px 2px 4px #000;
+        }
+        
+        /* === Floating Decorative Elements === */
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .ornament {
+            position: absolute;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        
+        .ornament-1 {
+            top: 30%;
+            left: 10%;
+            width: 100px;
+            animation-delay: 0.5s;
+        }
+        
+        .ornament-2 {
+            bottom: 20%;
+            right: 10%;
+            width: 120px;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Top Left) -->
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </nav>
+    
+    <!-- Decorative Floating Elements -->
+    <img src="Images/scroll-ornament.png" class="ornament ornament-1 floating">
+    <img src="Images/crystal-ornament.png" class="ornament ornament-2 floating">
+    
+    <!-- About Content -->
+    <div class="about-container">
+        <h1 class="about-title">Kone</h1>
+        
+        <p class="about-text">
+            In the shadowed halls of forgotten realms, where magic flows like rivers and legends walk as mortals, Mythic Creations was born. Our journey began when a wandering sage and a digital artisan crossed paths under the boughs of the Eternal Oak.
+        </p>
+        
+        <p class="about-text">
+            We craft digital wonders that bridge worlds - from the mischievous Orbie who dances between dimensions to the noble Kone who guards ancient secrets. Each creation is woven with spells of imagination and runes of code.
+        </p>
+        
+        <p class="about-text">
+            Like blacksmiths of old, we hammer raw ideas into shimmering realities, always guided by the twin stars of artistry and adventure. Our workshop exists between heartbeats and daydreams, in that sacred space where stories take form.
+        </p>
+        
+        <p class="signature">~ The Artisan ~</p>
+    </div>
+</body>
+</html>

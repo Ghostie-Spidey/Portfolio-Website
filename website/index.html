@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Portfolio</title>
+    <style>
+        /* === CSS RESET === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* === BACKGROUND === */
+        body {
+            font-family: 'MedievalSharp', cursive;
+            height: 100vh;
+            overflow: hidden;
+            background: url('Images/hi.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Dark overlay for better text visibility */
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* === TIGHTENED HEADER === */
+    header {
+    text-align: center;
+    padding: 100px 0 20px 0; /* ← Add space at top */
+    }
+        h2 {
+            color: white;
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            letter-spacing: 3px;
+            margin-bottom: 0; /* Remove default margin */
+        }
+
+        /* === ICON CONTAINER WITH LESS SPACING === */
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 300px); /* Reduced from 180px */
+            gap: 200px;
+            margin-top: -10px; /* Pulls icons slightly closer */
+        }
+
+        /* === ICONS === */
+        .icon {
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.4s ease;
+        }
+
+        .icon img {
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect: Icons pop up */
+        .icon:hover img {
+            transform: scale(1.2) translateY(-10px);
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+        }
+
+        /* === FLOATING TEXT === */
+        .floating-text {
+            color: white;
+            margin-top: 15px;
+            font-size: 50px;
+            text-shadow: 0 0 5px black;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- TIGHTENED HEADER -->
+    <header>
+        <h1></h1>
+        <h2>SELECT YOUR CREATOR</h2>
+    </header>
+
+    <!-- ICON CONTAINER -->
+    <div class="icon-container">
+        <!-- Icon 1 -->
+        <a href="orbiecreator.html" class="icon">
+            <img src="Images/orbiepic.png">
+            <p class="floating-text">Orbie</p>
+        </a>
+        
+        <!-- Icon 2 -->
+        <a href="konecreator.html" class="icon">
+            <img src="Images/orbiepic.png" alt="Contact Icon">
+            <p class="floating-text">Kone</p>
+        </a>
+    </div>
+</body>
+</html>

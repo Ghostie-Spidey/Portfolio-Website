@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'MedievalSharp', cursive;
+      background: url('Images/hi.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .info-box {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .back-btn {
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      border: 2px solid white;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Kone</div>
+    <div class="quote">"You're magical. Nobody could ever not see that."</div>
+
+    <div class="info-box">
+      <p>Music is a part of your soul. Kone's work is just that.</p>
+    </div>
+
+    <div class="Playlist">
+      <img src="Images/idkman.webp" alt="sound1">
+      <img src="Images/idkman.webp" alt="sound2">
+      <img src="Images/idkman.webp" alt="sound3">
+      <img src="Images/idkman.webp" alt="sound4">
+      <img src="Images/idkman.webp" alt="sound5">
+    </div>
+
+    <a href="index.html" class="back-btn">&larr; Go back</a>
+  </div>
+</body>
+</html>
